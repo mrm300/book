@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lan = "en">
+    <head>
+        <title>Bookies :: Shopping</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="styles.css">
+        <style>
+
+		body {
+		overflow-y: scroll;
+        overflow-x: hidden;
+		}
+
+        main {
+            font-family: comic Sans Ms, cursive;
+            color: #4b655a;
+			padding-top:100px;
+        }
+
+        #wrapper {
+            margin-left: auto;
+            margin-right: auto;
+            background-image: url(background3.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+			height:145vh;
+        }
+
+        .div1 {
+            margin-left: 17%;
+            margin-right: 15%;
+        }
+        
+        h1 {
+            font-family: Great vibes, cursive;
+            color: #e6b0b0; 
+            text-shadow:2px 3px 1px #4b655a;
+        }
+
+        .input-group {
+            width: 600px;
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            position: relative;
+        }
+
+        .input-group label {
+            flex-basis: 25%;
+            font-size: 28px;
+        }
+        
+        .input-group input {
+            flex-basis: 350px;
+            background: transparent;
+            border: 0;
+            outline: 0;
+            padding: 0;
+            border-bottom: 1px solid #999;
+            color: #333;
+            font-size: 25px;
+            width: 600px;
+        }
+        
+        .input-group span {
+            position: absolute;
+            width: 250px;
+            left: 500px;
+            font-size: 16px;
+            color: red;
+        }
+        
+        ::placeholder {
+            font-size: 22px;
+			
+        }
+
+        input[type="radio"] {
+            height: 17px;
+        }
+        
+        #subit-error{
+            color:red;
+        }
+        
+        .block {
+            display: block;
+            float: left;
+            width: 500px;
+		    font-size:25px;
+        }
+        
+		label { 
+            font-size:28px;
+        }
+
+        td input {
+            font-size: 25px;
+            height: 30px;
+            width: 250px;
+        }
+
+        input[type="checkbox"]{
+            height: 20px;
+            width: 20px;
+        }
+        
+        form button {
+            background: #4b655a;
+            color: #fff;
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            align-self: center;
+            outline: 0;
+            cursor: pointer;
+            display: block;
+            font-family: comic Sans Ms, cursive;
+            width: 150px;
+            height: 50px;
+            font-size: 25px;
+        }
+
+    </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <nav>
+<ul>
+<li><a href="Home.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+<li><a href="Books.html"><i class="fa fa-book"></i>Books</a></li>
+<li><a href="Shopping.html"><i class="fa fa-shopping-cart"></i>Shopping</a></li>
+<li><a href="Events.html"><i class="fa fa-calendar"></i>Events</a></li>
+<li><a href="Authors.html"><i class="fas fa-pen-nib"></i>Authors</a></li>
+</ul>
+</nav>
+            <main>
+                <form>
+                    <div class="div1">
+                    <h1>>>Personal Information</h1>
+
+                    <div class = "input-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+                        <span id="name-error"></span>
+                    </div>
+                    
+                    <div class = "input-group" style="width: 300px; font-size: 20px;">
+                        <label>Gender</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="Gender" id="Gender">Male 
+                        <input type="radio" name="Gender" id="Gender">Female
+                    </div>
+        
+                    <div class = "input-group">
+                        <label>Phone No.</label>
+                        <input type="tel" placeholder="01 234567" id="contact-phone" onkeyup="validatePhone()">
+                        <span id="phone-error"></span>
+                    </div>
+        
+                    <div class = "input-group">
+                        <label>Email Id</label>
+                        <input type="text" placeholder="Enter email" id="contact-email" onkeyup="validateEmail()">
+                        <span id="email-error"></span>
+                    </div>
+                
+                <br>
+                    <hr>
+
+                    <h1>>>Books</h1>
+
+                    <div class="block">
+                        <input type="checkbox" name="stand" id="stand" value="yes" height="15px">The Stand <br>
+                        <input type="checkbox" name="fairytale" id="fairytale" value="yes">Fairy table <br> 
+                        <input type="checkbox" name="needthing" id="needthing" value="yes">Needful Things <br>
+                        <input type="checkbox" name="it" id="it" value="yes">It <br>
+                        <input type="checkbox" name="brownsuit" id="brownsuit" value="yes">The Man in the Brown Suit <br>
+                        <input type="checkbox" name="evans" id="evans" value="yes">Why Didn't they Ask Evans <br>
+                    </div>
+
+                    <div class="block">
+                        <input type="checkbox" name="sittaford" id="sittaford" value="yes">The Sittaford Mystery <br>
+                        <input type="checkbox" name="murder" id="murder" value="yes">The Murder at the Vicarage <br>
+                        <input type="checkbox" name="history" id="history" value="yes">A Short History of Nearly Everything <br>
+                        <input type="checkbox" name="exphuman" id="exphuman" value="yes">Explaining Humans <br>
+                        <input type="checkbox" name="odyssey" id="odyssey" value="yes">The Odyssey <br>
+                        <input type="checkbox" name="warpeace" id="warpeace" value="yes">War and peace 
+                    </div>
+                <br style="clear: left;"> 
+                <br>
+                <hr>
+                <h1>>>Address</h1>
+                    <table>
+                        <tr>
+                            <td>
+                                <label>Province:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="province" id="province" required> &nbsp;&nbsp;&nbsp; 
+                            </td>
+                            <td>
+                              <label>District:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="district" id="district" required> &nbsp;&nbsp;&nbsp;
+                            </td>
+                            <td>
+                               <label>Region:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="region" id="region" required> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                              <label>Street:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="street" id="street"required> &nbsp;&nbsp;&nbsp;
+                            </td>
+                            <td>
+                               <label>Building:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="building" id="building" required> &nbsp;&nbsp;&nbsp;
+                            </td>
+                            <td>
+                               <label>Floor:</label>
+                            </td>
+                            <td>
+                                <input type="text" name="floor" id="floor" required> 
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                <hr>
+                <br>
+                <button onclick="return validateForm()">Submit</button>
+                <span id="subit-error"></span>
+
+            </form>
+        </div>
+            <script>
+                var nameError = document.getElementById('name-error');
+                var phoneError = document.getElementById('phone-error');
+                var emailError = document.getElementById('email-error');
+                var submitError = document.getElementById('subit-error');
+    
+                function validateName() {
+                    var name = document.getElementById('contact-name').value;
+                    if(name.lenght == 0){
+                        nameError.innerHTML = 'Name is required';
+                        return false;
+                    }
+                    if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
+                        nameError.innerHTML = 'Write full name';
+                        return false;
+                    }
+                    nameError.innerHTML = '<p>✅</p>';
+                    return true;
+                }
+
+                function validatePhone() {
+                    var phone = document.getElementById('contact-phone').value;
+                    if(phone.lenght == 0){
+                        phoneError.innerHTML = 'Phone is required';
+                        return false;
+                    }
+                    if(phone.length != 8) {
+                        phoneError.innerHTML = 'Phone should be 8 digits';
+                        return false;
+                    }
+                    if(!phone.match(/^[0-9]{8}$/)) {
+                        phoneError.innerHTML = 'Only digits please';
+                        return false;
+                    }
+                    phoneError.innerHTML = '<p>✅</p>';
+                    return true;
+                }
+
+                function validateEmail() {
+                    var email = document.getElementById('contact-email').value;
+                    if(email.lenght == 0){
+                        emailError.innerHTML = 'Email is required';
+                        return false;
+                    }
+                    if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+                        emailError.innerHTML = 'Email Invalid';
+                        return false;
+                    }
+                    emailError.innerHTML = '<p>✅</p>';
+                    return true;
+                }
+
+                function validateForm() {
+                    if(!validateName() || !validatePhone() || !validateEmail()) {
+                        submitError.style.display = 'block';
+                        submitError.innerHTML = 'Please fix error to submit';
+                        setTimeout(function(){submitError.style.display = 'none';}, 3000);
+                        return false;
+                    }
+                }
+				
+				document.body.style.zoom="77%"
+            </script>
+            </main>
+        </div>
+		<footer>
+<ul>
+
+<li><a href=" https://instagram.com/bookies.lb?igshid=YmMyMTA2M2Y"><i class="fab fa-instagram "></i>Bookies.lb</a></li>
+<li><a href="https://www.facebook.com/bookies.lb"><i class="fab fa-facebook-f"></i>Bookies Bookshop</a></li>
+<li><a href="
+https://maps.google.com/?q=Haret+Hreik&ftid=0x151f177c124d6349:0xaeb1ff084d2e9728&entry=gps
+"><i class="fa fa-map-marker"></i>Location: Beirut, Haret Hreik</a></li>
+
+
+</ul>
+</footer>
+    </body>
+	
+	
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      <title>Bookies :: Home</title>
+      <style>
+        
+         .main-content{background-image: url(homecontent1.jpg);
+            background-size: cover;
+			height:130vh;
+			overflow-y: scroll;
+            overflow-x: hidden;
+			}
+		 
+        .container{
+            
+            width: 100%;
+            padding-left: 5%;
+            padding-right: 5%;
+            position: relative;
+            margin-bottom: 0% ;
+			font-family: "Great vibes", cursive;
+			
+        } 
+        .content{
+            font-size: 60px;
+            padding-top: 5%;
+            margin-left: 47%;
+            padding-left: 15vh;
+            display: flex;
+            justify-content: center;
+
+        } 
+
+
+        .super{
+            margin-top: 4%;
+            margin-bottom: 50px;
+            padding-left: 10vh;
+            padding-right:1vh;
+			
+        }
+        .top{
+            margin-right:30vh;
+            margin-left:5vh;
+			font-family:"Comic Sans MS", cursive;
+			font-size:19px;
+        }
+
+        .super1{
+            margin-top: 4%;
+            margin-bottom: 50px;
+            padding-right:20vh;
+
+        }
+        .hello{
+            display:flex;
+            margin-top:5vh;
+			font-family: "Great vibes", cursive;
+        }
+
+
+        #library-hours{
+            height: 25vh;
+            font-size: 3vh;
+            width: 27vh;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url(homesign.jpg);
+            background-size: cover;
+            text-align: center;
+            padding-left: 0.5%;
+            padding-top: 6%;
+            margin-left: 138vh;
+            margin-top: 0vh;
+            color: #fff;
+            
+        }
+      </style>
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+<div class="main-content">
+        <div class="wrapper"> 
+            <nav> 
+                <ul > 
+                <li><a href="Home.html"><i class="fa fa-fw fa-home"></i>Home</a></li> 
+                <li><a href="Books.html"><i class="fa fa-book"></i>Book</a></li> 
+                <li><a href="Shopping.html"><i class="fa fa-shopping-cart"></i>Shopping</a></li> 
+                <li><a href="Events.html"><i class="fa fa-calendar"></i>Events</a></li> 
+                <li><a href="Authors.html"><i class="fas fa-pen-nib"></i>Authors</a></li>
+                 
+                </ul>
+                    
+                </nav>
+            <div class="container">
+                    
+                <div class="content">
+                    <div style="font-size: 180px; font-weight: bold; color: #4b655a;">BOOK</div>
+                    <div style="color: #4b655a;margin-top: 7.5% ;">IES<br>SHOP</div>
+  
+                </div>
+
+                <div id="library-hours" ></div>
+
+            </div>
+
+        </div>
+</div>
+
+
+  <div class="hello">
+  <div class="super">
+  <table><tr>
+                <th><img src="homemission.jpeg" height="50px"width="50px"></th>
+                <th style="color:#4b655a; font-size:30px; ">Mission and Purpose</th>
+  </tr></table>
+  <div class="top">
+  <p style="color:rgb(112, 61, 49);">
+  We provides our readers with a simple and easy option to make purchases.
+  Through our website, you can browse your titles anytime and anywhere, and simply click “buy” when you’re ready.
+  The convenience and immediacy of this experience encourage more purchases, as you won’t need to leave the safety and comfort of their homes.
+  In addition , our mission is to provide quality but affordable books for education, entertainment, self-development and self-fulfillment.
+  </p>
+  </div>
+  </div>
+  <div class="super1">
+    <img src="homeevent3.jpg" height="300px"width="450px">
+    </div>
+    </div>
+<div class="hello">
+  <div class="super">
+  <table><tr>
+                <th><img src="homemission.jpeg" height="50px"width="50px"></th>
+                <th style="color:#4b655a; ;font-size:30px">About Us</th>
+  </tr></table>
+  <div class="top">
+  <p style="color:rgb(112, 61, 49);">
+    BOOKIES will intreduce best book sellers , saled ones , an easy way for shooping . In addition , BOOKIES 
+    will intreduce their upcoming events for debating books' content between their readers . For more , BOOKIES will 
+    discuss some author's scrap to provide their readers with more cultivation .
+    </p>
+  </div>
+  </div>
+  <div class="super1">
+    <img src="homeevent.jpg" height="300px"width="450px">
+    </div>
+    </div>
+  
+       <footer>
+<ul>
+
+<li><a href=" https://instagram.com/bookies.lb?igshid=YmMyMTA2M2Y"><i class="fab fa-instagram "></i>Bookies.lb</a></li>
+<li><a href="https://www.facebook.com/bookies.lb"><i class="fab fa-facebook-f"></i>Bookies Bookshop</a></li>
+<li><a href="
+https://maps.google.com/?q=Haret+Hreik&ftid=0x151f177c124d6349:0xaeb1ff084d2e9728&entry=gps
+"><i class="fa fa-map-marker"></i>Location: Beirut, Haret Hreik</a></li>
+
+
+</ul>
+</footer>
+</body>
+<script>
+        function displayLibraryHours() {
+                // Get the current day and time
+                const now = new Date();
+                const dayOfWeek = now.getDay();
+                const hourOfDay = now.getHours();
+                
+                // Define the library hours for each day of the week
+                const libraryHours = [
+                    { day: 'Sunday', hours: '<br>Closed' },
+                    { day: 'Monday', hours: 'OPEN<br>9am - 5pm' },
+                    { day: 'Tuesday', hours: 'OPEN<br>9am - 5pm' },
+                    { day: 'Wednesday', hours: 'OPEN<br>12pm - 8pm' },
+                    { day: 'Thursday', hours: 'OPEN<br>12pm - 8pm' },
+                    { day: 'Friday', hours: 'OPEN<br>9am - 5pm' },
+                    { day: 'Saturday', hours: 'OPEN<br>10am - 4pm' }
+                ];
+                
+                // Find the library hours for the current day of the week
+                const todayHours = libraryHours[dayOfWeek];
+                
+                // Display the library hours for the current day
+                const libraryHoursElement = document.getElementById('library-hours');
+                libraryHoursElement.innerHTML = `${todayHours.hours}`;
+
+        }
+
+        window.addEventListener('load', displayLibraryHours);
+
+
+document.body.style.zoom="77%"
+    </script>
+    
+
+    
+
+    
+
+</html>

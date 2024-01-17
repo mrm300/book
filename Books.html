@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lan= " en ">
+<head>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+<title>Bookies :: Available Books</title>
+
+<style>
+
+.column{
+	float:left;
+	width:25%;
+	padding:40px;
+	margin-left:50px;
+	margin-right:50px;
+}
+.row::after{
+	content:"";
+	clear:both;
+	display:table;
+}
+
+.caption{
+	width:240px;
+	text-align:center;
+	color:#4b655a;
+	font-weight:bold;
+	margin-top:-15px;
+	font-family: great vibes,cursive;
+	font-size:17px;
+}
+
+
+
+.arrow:hover{
+	opacity:0.3;
+}
+
+.price{
+	width:240px;
+	text-align:center;
+	color:#e6b0b0;
+	font-weight:bold;
+	padding:3px;
+	font-family: great vibes,cursive;
+	font-size:25px;
+	text-shadow:2px 3px 1px #4b655a;
+}
+
+
+.more{
+   display: none;
+}
+
+.post{
+   color: #927A7C;
+   font-size: 20px;
+   font-weight:bold;
+   text-align: justify;
+   line-height: 35px;
+   font-family: comic sans ms,cursive;
+}
+.post:not(:last-child){
+   margin-bottom: 30px;
+}
+.button {
+  background-color: #e6b0b0;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin-top: 5px;
+  border-radius: 12px;
+  font-family: comic sans ms,cursive;
+  font-weight:bold;
+  text-shadow:2px 3px 1px #4b655a;
+}
+
+.css1{
+
+  font-size:50px;
+  font-family: comic sans ms ,cursive;
+  font-weight:bold;
+  color:#e6b0b0;
+  
+  text-shadow:2px 3px 1px #4b655a;
+}
+body{
+background :url("books.jpg");
+background-size:cover;
+overflow-y: scroll;
+overflow-x: hidden;
+}
+
+</style>
+
+
+<link rel="stylesheet" href="    ">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<nav>
+<ul>
+<li><a href="Home.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+<li><a href="Books.html"><i class="fa fa-book"></i>Books</a></li>
+<li><a href="Shopping.html"><i class="fa fa-shopping-cart"></i>Shopping</a></li>
+<li><a href="Events.html"><i class="fa fa-calendar"></i>Events</a></li>
+<li><a href="Authors.html"><i class="fas fa-pen-nib"></i>Authors</a></li>
+</ul>
+</nav>
+<header style="text-align:center; margin-bottom:100px;margin-top:100px;"><marquee class="css1"> Available Books </marquee></header>
+<main style="margin-right:150px;margin-left:165px;">
+
+<script>
+
+	function myFunction(x) {
+		x.classList.toggle("fa-thumbs-down");
+		}
+
+</script>
+
+
+<div class="row">
+	<div class="column">
+    <img class="arrow" src="the stand.png"height="350" width="250" class="floatleft" >
+	<div class="price">7$</div>
+	<div class="caption"><br>The Stand<br>By Stephen King<br></div>
+	<i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+	<div class="post">
+	One man escapes from a biological weapon facility after an accident
+	<span class="dots">...</span>
+    <span class="more">
+	carrying with him the deadly virus known as Captain Tripps, a rapidly mutating flu that - in the ensuing weeks - wipes out most of the world's population. In the aftermath, survivors choose between following an elderly black woman to Boulder or the dark man, Randall Flagg, who has set up his command post in Las Vegas. The two factions prepare for a confrontation between the forces of good and evil.
+	</span>
+    <button class="button">read more</button>
+	</div>
+	
+	</div>
+	
+	<div class="column">
+	<img class="arrow" src="the man.png" height="350" width="250" class="floatleft">
+	<div class="price">10$</div>
+	<div class="caption"><br>The Man in The Brown Suit<br>By Agatha Christie<br></div>
+	<i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+	<div class="post">
+	Pretty, young Anne Beddingfeld has come to London
+	<span class="dots">...</span>
+    <span class="more">
+	looking for adventure. But adventure finds her when a strange-smelling man falls off an Underground platform and is electrocuted on the rails. The police verdict is accidental death.
+	</span>
+    <button class="button">read more</button>
+	</div>
+	
+	</div>
+	
+	<div class="column">
+	<img class="arrow" src="mystery.jpg" height="350" width="250" class="floatleft">
+	<div class="price">12$</div>
+	<div class="caption"><br>The Sittaford Mystery<br>By Agatha Christie<br></div>
+	<i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+	<div class="post">
+	In a remote house in the middle of Dartmoor
+	<span class="dots">...</span>
+    <span class="more">
+	six shadowy figures huddle around a small table for a seance. Tension rises as the spirits spell out a chilling message:Captain Trevelyan dead murder. Is this black magic or simply a macabre joke? The only way to be certain is to locate Captain Trevelyan. Unfortunately, his home is six miles away and, with snow drifts blocking the roads, someone will have to make the journey on foot.
+	</span>
+    <button class="button">read more</button>
+	</div>
+	
+	</div>
+	
+</div>
+
+
+
+
+<div class="row">
+
+	<div class="column">
+	<img class="arrow" src="fairy tale.jpg" height="350" width="250" class="floatleft">
+	<div class="price">6$</div>
+	<div class="caption"><br>Fairy Tale<br>By Stephen King<br></div>
+	<i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+	<div class="post">
+	A story as old as myth, and as startling and iconic as
+	<span class="dots">...</span>
+    <span class="more">
+	the rest of King’s work, Fairy Tale is about an ordinary guy forced into the hero’s role by circumstance, and it is both spectacularly suspenseful and satisfying.
+	</span>
+    <button class="button">read more</button>
+	</div>
+	
+	</div>
+	
+	<div class="column">
+	<img class="arrow" src="short story.png" height="350" width="250" class="floatleft">
+	<div class="price">9$</div>
+	<div class="caption"><br>A Short History<br>By Bill Bryson<br></div>
+	<i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+	<div class="post">
+	How did it all begin? And how did we get here
+	<span class="dots">...</span>
+    <span class="more">
+	? Combining history and science, A Short History of Nearly Everything offers a comprehensive yet entertaining answer to these questions. Written out of dissatisfaction with his own scientific knowledge, Bill Bryson takes the reader on a dazzling journey through the greatest scientific discoveries in history.
+	</span>
+    <button class="button">read more</button>
+	</div>
+	
+	</div>
+	
+	<div class="column">
+	<img class="arrow" src="evans.jpg" height="350" width="250" class="floatleft">
+	<div class="price">11$</div>
+	<div class="caption"><br>Why Didn’t They Ask Evans?<br>By Agatha Christie<br> </div>
+	<i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+	<div class="post">
+	While playing golf on the Welsh coast
+	<span class="dots">...</span>
+    <span class="more">
+	, Bobby Jones accidentally hits a stranger who collapses from the top of a cliff with his ball. His last enigmatic words are "Why didn't they ask Evans?"
+	</span>
+    <button class="button">read more</button>
+	</div>
+	
+	</div>
+	
+	
+</div>
+
+<div class="row">
+
+	<div class="column">
+	<img class="arrow" src="vicarage.png" height="350" width="250" class="floatleft">
+	<div class="price">9$</div>
+	<div class="caption"><br>The Murder at The Vicarage<br>By Agatha Christie<br></div>
+	<i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+	<div class="post">
+	Anyone who murdered Colonel Protheroe, declared the parson
+	<span class="dots">...</span>
+    <span class="more">
+	brandishing a carving knife above a joint of roast beef, ‘would be doing the world at large a favour!’ It was a careless remark for a man of the cloth. And one which was to come back and haunt the clergyman just a few hours later – when the colonel was found shot dead in the clergyman’s study.
+	</span>
+    <button class="button">read more</button>
+	</div>
+	
+	</div>
+
+	<div class="column">
+	<img class="arrow" src="odyssey.png" height="350" width="250" class="floatleft">
+	<div class="price">13$</div>
+	<div class="caption"><br>The Odyssey<br>By Homer<br></div>
+	<i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+	<div class="post">
+	Is a Greek epic poem that tells of the return journey of Odyssey
+	<span class="dots">...</span>
+    <span class="more">
+	to the island of Ithaca from the war at Troy, which Homer addressed in The Iliad. In the Greek tradition, the war lasted for ten years.
+	</span>
+    <button class="button">read more</button>
+	</div>
+	
+	</div>
+	
+	<div class="column">
+	<img class="arrow" src="needful things.jpg" height="350" width="250" class="floatleft">
+	<div class="price">6$</div>
+	<div class="caption"><br>Needful Things<br>By Stephen King<br></div>
+	<i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+	<div class="post">
+	Leland Gaunt opens a new shop in Castle Rock called Needful Things
+	<span class="dots">...</span>
+    <span class="more">
+	. Anyone who enters his store finds the object of his or her lifelong dreams and desires: a prized baseball card, a healing amulet. In addition to a token payment, Gaunt requests that each person perform a little "deed," usually a seemingly innocent prank played on someone else from town.
+	</span>
+    <button class="button">read more</button>
+	</div>
+	
+	</div>
+	
+</div>
+
+<div  class="row">
+
+	<div class="column">
+	<img class="arrow" src="war and peace.jpg" height="350" width="250" class="floatleft">
+	<div class="price">10$</div>
+	<div class="caption"><br>War and Peace<br>By Leo Tolstoy<br></div>
+	<i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+	<div class="post">
+	Broadly focuses on Napoleon’s invasion of Russia in 1812 and 
+	<span class="dots">...</span>
+    <span class="more">
+	follows three of the most well-known characters in literature: Pierre Bezukhov, the illegitimate son of a count who is fighting for his inheritance and yearning for spiritual fulfillment; Prince Andrei Bolkonsky, who leaves his family behind to fight in the war against Napoleon; and Natasha Rostov, the beautiful young daughter of a nobleman who intrigues both men.
+	</span>
+    <button class="button">read more</button>
+	</div>
+	
+	</div>
+
+	<div class="column">
+	<img class="arrow" src="it.jpeg" height="350" width="250" class="floatleft">
+	<div class="price">12$</div>
+	<div class="caption"><br>It<br>By Stephen King<br></div>
+	<i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+	<div class="post">
+	A promise made twenty-eight years ago calls seven adults to reunite 
+	<span class="dots">...</span>
+    <span class="more">
+	in Derry, Maine, where as teenagers they battled an evil creature that preyed on the city's children. Unsure that their Losers Club had vanquished the creature all those years ago, the seven had vowed to return to Derry if IT should ever reappear. Now, children are being murdered again and their repressed memories of that summer return as they prepare to do battle with the monster lurking in Derry's sewers once more.
+	</span>
+    <button class="button">read more</button>
+	</div>
+	
+	</div>
+	
+	<div class="column">
+	<img class="arrow" src="humans.png" height="350" width="250" class="floatleft">
+	<div class="price">15$</div>
+	<div class="caption"><br>Explaining Humans<br>By Dr. Camilla Pang<br></div>
+	<i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+	<div class="post">
+	Is an original and incisive exploration of human nature and
+	<span class="dots">...</span>
+    <span class="more">
+	the strangeness of social norms, written from the outside looking in. Camilla's unique perspective of the world, in turn, tells us so much about ourselves - about who we are and why we do it - and is a fascinating guide on how to lead a more connected, happier life.
+	</span>
+    <button class="button">read more</button>
+	</div>
+	</div>
+</div>
+
+<script>
+$(document).ready(function(){
+   $(".button").click(function(){
+      $(this).prev().toggle();
+      $(this).siblings('.dots').toggle();
+      if($(this).text()=='read more'){
+	$(this).text('read less');
+      }
+      else{
+	$(this).text('read more');
+      }
+   });
+});
+
+document.body.style.zoom="77%"
+</script>
+
+</main>
+<footer>
+<ul>
+
+<li><a href=" https://instagram.com/bookies.lb?igshid=YmMyMTA2M2Y"><i class="fab fa-instagram "></i>Bookies.lb</a></li>
+<li><a href="https://www.facebook.com/bookies.lb"><i class="fab fa-facebook-f"></i>Bookies Bookshop</a></li>
+<li><a href="
+https://maps.google.com/?q=Haret+Hreik&ftid=0x151f177c124d6349:0xaeb1ff084d2e9728&entry=gps
+"><i class="fa fa-map-marker"></i>Location: Beirut, Haret Hreik</a></li>
+
+
+</ul>
+</footer>
+</body>
+</html>
+

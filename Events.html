@@ -1,0 +1,412 @@
+<!DOCTYPE HTML>
+<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  
+  <style>
+    
+  
+   body{ 
+   display:table-row;
+   background: url("background.jpg");
+   background-size:cover;
+   background-repeat:no-repeat;
+   overflow-y: scroll;
+   overflow-x: hidden;
+   }
+   
+   .grab{
+   font-family:"Comic Sans MS", cursive;;
+   font-size:0.9rem;
+   color:#ef8788;
+   text-align:left;
+   padding-top:90px;
+   padding-left:50px;
+   height:0.1vh;
+   text-shadow:2px 3px 1px #4b655a;
+   }
+   
+   .ml2{
+  font-weight: 900;
+  font-size: 3.5em;
+  }
+
+   .ml2 .letter{
+  display: inline-block;
+  line-height: 1em;
+  }
+   
+   .bod{
+	 align-items: center;
+	 justify-content: center;
+	 display: flex;
+	 height:110vh;
+	padding-left:50px;
+	
+   }
+
+    .header{
+     font-family: "Great vibes", cursive;
+    }
+	
+	.c1{
+	color:#ef8788;
+	text-shadow:2px 3px 1px #4b655a;
+    font-size:1.8rem;
+	}
+	 
+	.c2{
+     font-size:4rem;
+     color:#4b655a;
+	 padding-right:100px;
+    }
+	
+   .cover{
+     width:1088px;
+     height:500px;
+	 margin-top:50px;
+	 display:flex;
+	 gap:20px;
+    }	 
+
+   .box{
+    font-family:"Comic Sans MS", cursive;
+    color:#4b655a;
+    position:relative;
+	margin:10px;
+	width:350px;
+	height: 400px;
+	box-shadow: -1px 10px 20px #000000;
+	align-items:center;
+	justify-content:center;
+	text-align:justify;
+	cursor:pointer;
+	transition:0.2s;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:10px;
+	overflow:hidden;
+	font-size:1.1rem;
+    }
+
+   .box:hover{
+	box-shadow: 0 4rem 8rem rgba(0,0,0,0.5);
+	width:355px;
+    }
+	
+    img{
+	width: 310px;
+    height: 200px;
+	display: flex;
+    }
+	 
+    input,
+   .toggle{
+	position:absolute;
+	width:50px;
+	height:50px;
+	bottom:10px;
+	right:20px;
+    }
+
+    input{
+	opacity:0;	
+    }
+   
+   .toggle{
+	pointer-events:none;
+	border-radius:50%;
+	background:#fff;
+	transition:0.5s;
+	text-align:center;
+	line-height:50px;
+	font-size:19px;
+	box-shadow:0 0 0 0px #e6b0b0;
+    }
+	
+    input:checked~ .toggle{
+    box-shadow:0 0 0 500px #fff;
+    transform:rotate(180deg);
+    }
+
+   .detail{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+    height:100%;
+	padding:20px;
+	box-sizing:border-box;
+	z-index:11;
+	pointer-events:none;
+	transition:0.5s;
+	opacity:0;
+    }
+
+    input:checked~ .detail{
+	opacity:1;
+	transition-delay:0.5s;
+    }
+
+   .detail h2{
+	margin-bottom:5px;
+	color:#fff;
+	}
+
+   .detail p{
+	margin:0;
+	padding:0;
+	color:#fff;
+	}
+
+   .foot{ 
+    font-family:"great vibes",cursive;
+    font-weight:bold;
+    font-size:1.9rem;
+    position:relative;
+    bottom:-300px;
+    text-align:center;
+    right:1000px;
+    color:#ef8788;
+    text-shadow:2px 3px 1px #4b655a;
+	}
+
+    .coming-soon{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    justify-content:center;
+    min-height:100vh;
+    }
+	
+    .countdown{
+    position:relative;
+    bottom:-250px;
+    right:590px;
+    text-align:center;
+    display:flex;
+    justify-content:space-around;
+    color:#4b655a;
+    font-size:25px;
+    }
+	
+    .day ,.hour, .minute, .second{
+     font-size:26px;
+	 right:10px;
+     font-family:"great vibes",cursive;
+    }
+
+     h4{
+	 font-family:"Comic Sans MS", cursive;
+    }
+	
+	
+    
+
+    
+
+  </style>
+  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  
+  <title>Bookies :: Upcoming events</title>
+ 
+</head>
+
+<body>
+
+
+<nav>
+<ul>
+<li><a href="Home.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+<li><a href="Books.html"><i class="fa fa-book"></i>Books</a></li>
+<li><a href="Shopping.html"><i class="fa fa-shopping-cart"></i>Shopping</a></li>
+<li><a href="Events.html"><i class="fa fa-calendar"></i>Events</a></li>
+<li><a href="Authors.html"><i class="fas fa-pen-nib"></i>Authors</a></li>
+</ul>
+</nav>
+
+<div class="grab">
+<h1 class="ml2">Go WILD & Grab a Seat!</h1>
+</div>
+
+
+<main>
+
+<div class="bod">
+
+ <div class="header">
+   <h1 class="c2">BOOKIES</h1>
+   <h2 class="c1">UPCOMING EVENTS</h2>
+   <h1 class="c1">>>></h1>
+ </div>
+
+ <div class="cover"> 
+    <div class="box">
+	   
+	   <input type="checkbox" name="zero"/>
+	   <div class="toggle">More</div>
+       <img src="Bookiesevent1.jpg">
+        <h4>APRIL 20</h4>
+        <h1>Books with Aya</h1>
+        <br>
+		<i class="fa fa-map-marker">&nbsp;Beirut, Haret Hreik</i>
+		<i class="fas fa-clock">&nbsp;8:00 am - 10:30 am</i>
+		
+      <br>
+	  <div class="detail">
+	  <p>
+	  <h1>Books with Aya</h1>
+	  Join us on this event to explore the best seller list with <i><b>Aya</b></i> who will introduce a collection of latest best seller educational books. 
+	  <br><br>
+		<li>Event Category: Book Introduction</li>
+		<li>Speaker: Aya Al-atrash</li>
+	  </p>
+   	 </div>
+	 
+    </div>
+  
+  <div class="box">
+   <input type="checkbox" name="one">
+	   <div class="toggle">More</div>
+        <img src="Bookiesevent2.jpg">
+		<h4>APRIL 27</h4>
+        <h1>Read and Share</h1>
+        <br>
+		<i class="fa fa-map-marker">&nbsp;Beirut, Haret Hreik</i>
+		<i class="fas fa-clock">&nbsp;8:00 am - 11:00 am</i>
+		<br>
+		<div class="detail">
+	    <p><h1>Read and Share</h1>
+		Come to share with others your favourite book, together with <b><i>Zeinab</i></b> discuss what graps you the most in it, and discover new titles.<br>
+		<br>
+		<br>
+		<li>Event Category: Book Discussion</li>
+		<li>Speaker: Zeinab Wehbi</li>
+		</p>  
+        </div>
+   </div>
+
+    <div class="box">
+	 <input type="checkbox" name="two">
+	   <div class="toggle">More</div>
+        <img src="Bookiesevent3.jpg">
+		<h4>MAY 5</h4>
+        <h1>Bookies Branch</h1>
+        <br>
+		<i class="fa fa-map-marker">&nbsp;Zahle, main road</i>
+		<i class="fas fa-clock">&nbsp;12:00 pm - 1:30 pm</i>
+		<br>
+		<div class="detail">
+	   <p><h1>Bookies Branch</h1>
+	   We're glad to annouce to you the openning of our new <b><i>BOOKIES</i></b> brach, come to celebrate with us!
+	   <br>
+	   <br>
+		 Celebrate with BOOKIES team: <li>Zeinab wehbi</li>
+		<li>Aya al-atrash</li>
+		<li>Zahraa Sharifa</li>
+		<li>Zeinab Sharifa</li>
+		<li>Fatima Al-Zahraa Amhaz</li>
+		</li>
+		</p>
+       </div>
+	</div>
+	
+ 
+</div>
+
+<div class="comming-soon">
+ 
+  <h2 class="foot">Join our next event in:</h2>
+   <div class="countdown">
+           <div class="counter-day">
+            <h4 class="day">Time&emsp;&emsp;</h4>
+			<h4>Day&emsp;&emsp;</h4>
+		    </div>	
+	
+	        <div class="counter-hour">
+            <h4 class="hour">Time&emsp;&emsp;</h4>
+			<h4>Hour&emsp;&emsp;</h4>
+		    </div>	
+
+            <div class="counter-minute">
+            <h4 class="minute">Time&emsp;&emsp;</h4>
+			<h4>Minute&emsp;&emsp;</h4>
+		    </div>	
+
+            <div class="counter-second">
+            <h4 class="second">Time&emsp;&emsp;</h4>
+			<h4>Second&emsp;</h4>
+		    </div>	
+   </div>
+   
+</div>
+ 
+</main>
+ 
+<script type="text/javascript">
+  const countdown =() =>{
+  const countDate= new Date("April 20, 2023 00:00:00").getTime()
+  const now = new Date().getTime();
+  const gap=countDate - now;
+  const second=1000;
+  const minute= second *60;
+  const hour= minute *60;
+  const day= hour *24;
+  
+  const textDay=Math.floor( gap / day);
+ 
+  const textHour=Math.floor(( gap % day)/hour);
+  const textMinute=Math.floor(( gap % hour)/minute);
+  const textSecond=Math.floor(( gap % minute)/second);
+ 
+ document.querySelector(".day").innerText= textDay;	
+ document.querySelector(".hour").innerText= textHour;
+ document.querySelector(".minute").innerText= textMinute;
+ document.querySelector(".second").innerText= textSecond;
+  };
+  
+  setInterval(countdown, 1000);
+  
+  
+  var textWrapper = document.querySelector('.ml2');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml2 .letter',
+    scale: [4,1],
+    opacity: [0,1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 950,
+    delay: (el, i) => 70*i
+  }).add({
+    targets: '.ml2',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
+
+document.body.style.zoom="77%"
+</script>
+
+<footer>
+<ul>
+
+<li><a href=" https://instagram.com/bookies.lb?igshid=YmMyMTA2M2Y"><i class="fab fa-instagram "></i>Bookies.lb</a></li>
+<li><a href="https://www.facebook.com/bookies.lb"><i class="fab fa-facebook-f"></i>Bookies Bookshop</a></li>
+<li><a href="https://maps.google.com/?q=Haret+Hreik&ftid=0x151f177c124d6349:0xaeb1ff084d2e9728&entry=gps"><i class="fa fa-map-marker"></i>Location: Beirut, Haret Hreik</a></li>
+
+</ul>
+</footer>
+
+</body>
+</html>
